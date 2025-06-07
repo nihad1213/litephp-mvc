@@ -4,7 +4,9 @@ namespace app\core;
 
 class Application {
 
-    function __construct() {
+    public Router $router;
 
+    function __construct() {
+        $this->router = new Router();
     }
 }
