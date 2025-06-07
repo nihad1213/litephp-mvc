@@ -1,0 +1,12 @@
+{
+    "name": "nihad/php-lite-mvc",
+    "description": "MVC framework in PHP",
+    "type": "project", 
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "require": {}
+}
