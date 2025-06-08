@@ -2,8 +2,15 @@
 
 namespace app\core;
 
+/**
+ * Request class.
+ * Handles HTTP request data.
+ */
 class Request {
 
+    /**
+     * Get request path without query string.
+     */
     public function getPath() {
         $path = $_SERVER['REQUEST_URI'] ?? '?';
         $position = strpos($path, '?');
@@ -15,7 +22,10 @@ class Request {
         return substr($path, 0, $position);
     }
 
+    /**
+     * Get HTTP method (to be implemented).
+     */
     public function getMethod() {
-        
+        // ...
     }
 }

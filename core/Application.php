@@ -2,6 +2,11 @@
 
 namespace app\core;
 
+/**
+ * Core Application class.
+ * Initializes Request and Router.
+ * Runs the app by resolving the current route.
+ */
 class Application {
 
     public Router $router;
@@ -11,7 +16,6 @@ class Application {
         $this->request = new Request();
         $this->router = new Router($this->request);
     }
-
 
     public function run() {
         $this->router->resolve();
