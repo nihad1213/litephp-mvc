@@ -10,13 +10,13 @@ use app\core\Application;
 $app = new Application();
 
 
-$app->router->get('/', function(){
-    return "This is index";
-});
+$app->router->get('/', 'home');
+
 
 $app->router->get('/test', function(){
     return 'This is test';
 });
+
 
 
 $app->router->get('/contact', 'contact');
