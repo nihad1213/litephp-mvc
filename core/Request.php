@@ -23,9 +23,10 @@ class Request {
     }
 
     /**
-     * Get HTTP method (to be implemented).
+     * Get HTTP method.
      */
     public function getMethod() {
-        // ...
+        $method = $_SERVER['REQUEST_METHOD'];
+        return strtolower($method);
     }
 }

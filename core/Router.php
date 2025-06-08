@@ -27,6 +27,8 @@ class Router {
      */
     public function resolve() {
         $path = $this->request->getPath();
+        $method = $this->request->getMethod();
         var_dump($path);
+        var_dump($method);
     }
 }
