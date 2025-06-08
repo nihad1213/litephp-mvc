@@ -16,5 +16,3 @@ $app->router->get('/', function(){
 });
 
 $app->run();
-
-echo "test";
