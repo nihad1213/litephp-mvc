@@ -46,8 +46,8 @@ class Router {
      * Render view
      * @return void
      */
-    public function renderView() {
-
+    public function renderView($view) {
+        include_once __DIR__.'/../views/contact.php';
     }
 
 }
