@@ -29,8 +29,16 @@ class Router {
         $path = $this->request->getPath();
         $method = $this->request->getMethod();
         $callback = $this->routes[$method][$path] ?? null;
-        var_dump($path);
-        var_dump($method);
-        var_dump($callback);
+
+        if ($callback === null) {
+            echo 'Not Founded!';
+            exit;
+        }     
+
+        echo call_user_func($callback);
+
+        // var_dump($path);
+        // var_dump($method);
+        // var_dump($callback);
     }
 }

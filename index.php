@@ -11,7 +11,11 @@ $app = new Application();
 
 
 $app->router->get('/', function(){
-    return 'test';
+    return 'This is index';
+});
+
+$app->router->get('/test', function(){
+    return 'This is test';
 });
 
 $app->run();
