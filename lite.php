@@ -7,7 +7,7 @@ $command = $argv[1] ?? null;
 
 switch ($command) {
     case 'start':
-        $cmd = 'php -S localhost:8080';
+        $cmd = 'php -S localhost:8080 -t public/';
         system($cmd); 
         break;
 

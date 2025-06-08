@@ -1,7 +1,7 @@
 <?php
 
-require_once __DIR__.'/vendor/autoload.php';
-require_once __DIR__.'/config/config.php';
+require __DIR__.'/../vendor/autoload.php';
+require __DIR__.'/../config/config.php';
 
 use app\core\Application;
 
@@ -11,7 +11,7 @@ $app = new Application();
 
 
 $app->router->get('/', function(){
-    return 'This is index';
+    return "This is index";
 });
 
 $app->router->get('/test', function(){
