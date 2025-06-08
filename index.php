@@ -1,18 +1,17 @@
 <?php
 
 require_once __DIR__.'/vendor/autoload.php';
+require_once __DIR__.'/config/config.php';
 
 use app\core\Application;
-use app\core\Router;
 
 
 // Framework need to be work like that
 $app = new Application();
 
-$router = new Router();
 
 $app->router->get('/', function(){
-
+    return 'test';
 });
 
 $app->run();
