@@ -35,10 +35,19 @@ class Router {
             exit;
         }     
 
-        echo call_user_func($callback);
+        if (is_string($callback)) {
+            return $this->renderView($callback);
+        }
 
-        // var_dump($path);
-        // var_dump($method);
-        // var_dump($callback);
+        return call_user_func($callback);
     }
+
+    /**
+     * Render view
+     * @return void
+     */
+    public function renderView() {
+
+    }
+
 }

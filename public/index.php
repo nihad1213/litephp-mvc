@@ -18,4 +18,7 @@ $app->router->get('/test', function(){
     return 'This is test';
 });
 
+
+$app->router->get('/contact', 'contact');
+
 $app->run();
