@@ -9,10 +9,12 @@ namespace app\core;
  */
 class Application {
 
+    public static string $ROOT_DIR;
     public Router $router;
     public Request $request;
 
-    function __construct() {
+    function __construct($routePath) {
+        self::$ROOT_DIR = $routePath;
         $this->request = new Request();
         $this->router = new Router($this->request);
     }

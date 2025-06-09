@@ -7,7 +7,7 @@ use app\core\Application;
 
 
 // Framework need to be work like that
-$app = new Application();
+$app = new Application(dirname(__DIR__));
 
 
 $app->router->get('/', 'home');
